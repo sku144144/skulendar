@@ -12,19 +12,37 @@
     <img src="icon.png" alt="">
     <div>
       <h1>Privacy Policy</h1>
-      <p>Skulendar · updated 26 August 2026</p>
+      <p>Skulendar · updated 21 September 2026 · <a href="privacy-ru.html">Русский</a></p>
     </div>
   </header>
 
   <div class="card">
-    <p style="margin:0"><strong>In short.</strong> The app collects nothing and sends
-    nothing anywhere. Your notes stay on your device. If you switch backup on, copies go
+    <p style="margin:0"><strong>In short.</strong> The app collects nothing about you and has no
+    server of its own. Your notes stay on your device. If you switch backup on, copies go
     to your own Google Drive — and nowhere else.</p>
   </div>
 
   <h2>What is stored on your device</h2>
   <p>Notes, attachments (photos, video, voice recordings, drawings), reminders and settings
   are kept in the app's private storage on your device. The developer has no access to them.</p>
+
+  <h2>Device permissions</h2>
+  <ul>
+    <li><strong>Microphone</strong> — requested only when you tap the record button to add a
+        voice note. The recording is saved as an attachment on your device and is not sent
+        anywhere (except into your own Google Drive, if you enable backup).</li>
+    <li><strong>Notifications, alarms and reminders</strong> — to show your reminders at the
+        exact time you set, including on the lock screen, and to restore them after a reboot.</li>
+    <li><strong>Internet</strong> — only for Google Drive backup and for public holidays
+        (see below).</li>
+  </ul>
+
+  <h2>Public holidays</h2>
+  <p>If you choose a country for holidays in the settings, the app downloads the list of
+  public holidays for that country from the free public service
+  <a href="https://date.nager.at">date.nager.at</a>. The request contains only the year and
+  the country code; like any web request, it reveals your IP address to that service. No
+  notes or other personal data are sent. With no country selected, no such request is made.</p>
 
   <h2>Google Drive backup</h2>
   <p>This feature is off by default and only runs once you enable it. With your consent,
@@ -39,7 +57,7 @@
   them. There is no server in between: the app talks to Google Drive directly from your
   device.</p>
 
-  <h2>Which permission is requested</h2>
+  <h2>Which Google permission is requested</h2>
   <p>One, and only one:
   <code>https://www.googleapis.com/auth/drive.file</code>. This grants access
   <strong>solely to files the app itself created</strong>. The rest of your Drive is
@@ -48,7 +66,7 @@
   or Google Calendar.</p>
 
   <h2>Revoking access</h2>
-  <p>At any time: turn off <em>Drive backup</em> in the app's settings, or revoke access at
+  <p>At any time, revoke access at
   <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
   Backups already created stay in your Drive; you can delete them by hand like any other
   files.</p>
